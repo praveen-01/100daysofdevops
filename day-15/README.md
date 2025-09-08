@@ -106,16 +106,7 @@ etag: "68be520c-72"
 accept-ranges: bytes
 
 thor@jumphost ~$ curl -k https://stapp03/
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Welcome Page</title>
-  </head>
-  <body>
-    Welcome
-  </body>
-</html>
-
+Welcome!
 thor@jumphost ~$ 
 ```
 
