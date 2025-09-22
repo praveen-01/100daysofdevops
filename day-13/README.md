@@ -6,9 +6,9 @@ We have one of our websites up and running on our Nautilus infrastructure in Str
 2. Block incoming port 3004 on all apps for everyone except for LBR host.
 ---
 # Solution
+1. install the iptable using package manager
+2. bring up the service and enable it so that it stays up even after reboot
+3. add iptable rules to block taffic from 3004 port
 
-
-## commands used:
-
-
-## Learnings:
+check config.sh which has all the commands to install and block the port
+we can copy and run the script as is it will take care of installation and blocking the port
