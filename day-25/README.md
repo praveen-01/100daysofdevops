@@ -1,4 +1,4 @@
-# day-25
+# day-25 Git Merge Branches
 ---
 # Task
 The Nautilus application development team has been working on a project repository /opt/apps.git. This repo is cloned at /usr/src/kodekloudrepos on storage server in Stratos DC. They recently shared the following requirements with DevOps team:

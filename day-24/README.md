@@ -1,4 +1,4 @@
-# day-24: Create a git branch
+# day-24 Git Create Branches
 
 ---
 

@@ -1,4 +1,4 @@
-# Day-27
+# Day-27 Git Revert Some Changes
 ---
 # Task
 The Nautilus application development team was working on a git repository /usr/src/kodekloudrepos/beta present on Storage server in Stratos DC. However, they reported an issue with the recent commits being pushed to this repo. They have asked the DevOps team to revert repo HEAD to last commit. Below are more details about the task:
@@ -76,3 +76,9 @@ Use revert beta message (please use all small letters for commit message) for th
         initial commit
     [root@ststor01 beta]# 
 ```
+
+## Learnings
+revert is used when we want to add a new commit which undos the changes done in previous commit without changing the history. 
+All the changes are preserved, it creates a new commit altogther instead.
+It is more safer to use on branches than reset as reset rewrites the history
+usage: `git revert <commit>` 

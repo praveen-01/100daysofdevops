@@ -1,4 +1,4 @@
-# Day-26: Manging remote servers
+# Day-26 Git Manage Remotes
 ---
 # Task
 The xFusionCorp development team added updates to the project that is maintained under /opt/games.git repo and cloned under /usr/src/kodekloudrepos/games. Recently some changes were made on Git server that is hosted on Storage server in Stratos DC. The DevOps team added some new Git remotes, so we need to update remote on /usr/src/kodekloudrepos/games repository as per details mentioned below:
