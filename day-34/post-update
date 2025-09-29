@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+branch=$(git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3)
+
+if [ "$branch" == "master" ]; then
+        date=$(date +'%Y-%m-%d')
+        tag="release-$date"
+        git tag $tag
+        git push origin $tag
+fi

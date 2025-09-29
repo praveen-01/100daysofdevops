@@ -1,4 +1,4 @@
-# Day 3 Git Stash
+# Day 31 Git Stash
 ---
 # Task
 The Nautilus application development team was working on a git repository /usr/src/kodekloudrepos/apps present on Storage server in Stratos DC. One of the developers stashed some in-progress changes in this repository, but now they want to restore some of the stashed changes. Find below more details to accomplish this task:
