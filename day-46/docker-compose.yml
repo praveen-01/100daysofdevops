@@ -1,0 +1,21 @@
+services:
+  backend:
+    container_name: php_blog
+    image: php:apache-trixie
+    ports:
+      - 3004:80
+    volumes:
+      - /var/www/html:/var/www/html
+  
+  db:
+    container_name: mysql_blog
+    image: mariadb:latest
+    ports:
+      - 3306:3306
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql
+    environment:
+      MARIADB_USER: database_user
+      MARIADB_PASSWORD: database_user@123
+      MARIADB_DATABASE: database_blog
+      MARIADB_ROOT_PASSWORD: rootpass123
