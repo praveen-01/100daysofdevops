@@ -14,4 +14,6 @@ Once deployed, you can test the app using curl command on App Server 2.
 ---
 # Solution
 1. create the docker file by following the instructions use commands like copy to copy the files to image and run to run the commands
+2. use docker run to start the container and give appropriate flags to run the container in the background
+`[root@stapp02 python_app]# docker run -d --name pythonapp_nautilus -p 8098:5003 nautilus/python-app`
 
