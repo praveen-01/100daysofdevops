@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secret-nautilus
+spec:
+  volumes:
+    - name: secret-volume
+      secret:
+        secretName: beta
+  containers:
+  - name: secret-container-nautilus
+    image: fedora:latest
+    command: ["sleep", "infinity"]
+    volumeMounts:
+        - name: secret-volume
+          readOnly: true
+          mountPath: "/opt/apps"
